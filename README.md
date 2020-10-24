@@ -7,3 +7,4 @@ Today I Learnt : Keeping records of daily study log.
 [Summary On Tistory Blog](https://uiyoji-journal.tistory.com/)
 
 ## Self-Study
+### db-modeling
