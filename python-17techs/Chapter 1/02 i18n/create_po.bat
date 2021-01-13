@@ -1,0 +1,1 @@
+xgettext64.exe -d i18n_test_ko i18n_test.py
