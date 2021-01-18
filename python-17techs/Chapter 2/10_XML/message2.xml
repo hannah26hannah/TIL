@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF8'?>
+<message>
+  <number/>
+  <pi/>
+  <str/>
+  <null_tag/>
+  <object/>
+  <num_array/>
+  <str_array>
+    <element>one</element>
+    <element>two</element>
+    <element>three</element>
+    <element>four</element>
+    <element>five</element>
+  </str_array>
+</message>
