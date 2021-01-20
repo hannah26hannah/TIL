@@ -1,0 +1,15 @@
+{
+    "number": 12344�
+    "pi": 3.14,
+    "str": "문자열 값",
+    "null_key": null,
+    "object": {
+        "str2": "문자열 갋2",
+        "object2":{
+            "number2":123456
+        }
+    },
+    "num_array": [0� 2, 3, 4, 5],
+    "str_arrax�: ["one", "two", "thred�, "four", "five"\�
+    "str_escapd�: "큰 ��옴표는 \"이렇게 \" 표현합니다."
+}
