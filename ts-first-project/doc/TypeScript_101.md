@@ -23,14 +23,10 @@
 - [Never](#never)
 - [Intersection](#intersection)
 - [Errors](#errors)
+- [Reference](#reference)
 
 # TypeScript의 주요 특징들
-
 Created: Jan 10, 2021 4:02 PM
-👀 [참고한 강의](https://www.youtube.com/watch?v=VJ8rvsw2j5w)
-👀 [참고한 문서](https://heropy.blog/2020/01/27/typescript/)
-👀 [참고한 문서 : TypeScript Functions](https://medium.com/humanscape-tech/typescript-%ED%95%A8%EC%88%98-functions-32eff187f677)
-👀 [참고한 문서 : TypeScript Narrowing & Guard](https://medium.com/humanscape-tech/typescript%EA%B0%80-%ED%83%80%EC%9E%85%EC%9D%84-%EC%A2%81%ED%98%80%EA%B0%80%EB%8A%94-%EB%B2%95-c5c318982967)
 
 ## 타입스크립트의 특징
 
@@ -1426,3 +1422,9 @@ const isOkay: User & Validation = {
     또는 compiler option에서 "`strictPropertyInitialization: false`"
 
 - [⚠ TS2564 Error : Property '~' has no initializer and is not definitely assigned in the constructor](https://uiyoji-journal.tistory.com/44) (updated 2021-01-11)
+
+# Reference
+- 👀 [참고한 강의](https://www.youtube.com/watch?v=VJ8rvsw2j5w)
+- 👀 [참고한 문서](https://heropy.blog/2020/01/27/typescript/)
+- 👀 [참고한 문서 : TypeScript Functions](https://medium.com/humanscape-tech/typescript-%ED%95%A8%EC%88%98-functions-32eff187f677)
+- 👀 [참고한 문서 : TypeScript Narrowing & Guard](https://medium.com/humanscape-tech/typescript%EA%B0%80-%ED%83%80%EC%9E%85%EC%9D%84-%EC%A2%81%ED%98%80%EA%B0%80%EB%8A%94-%EB%B2%95-c5c318982967)
