@@ -14,7 +14,7 @@ Today I Learnt : Keeping records of daily study log.
 
 ### ts-first-project
 
-- [TypeScript 101](ts-first-project/doc/TypeScript_101.md) (updated 2021-01-12)
+- [TypeScript 101](ts-first-project/doc/TypeScript_101.md) (updated 2021-01-29)
 
 ## Group Study
 
