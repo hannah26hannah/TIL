@@ -5,3 +5,10 @@ console.log("We will, we will".replace(/we/i, "I")); //I will, we will
 
 // with g flag
 console.log("We will, we will".replace(/we/ig, "I")); // I will, I will
+
+// $& 
+console.log("I Love HTML".replace(/HTML/, "$& and JavaScript")); // I Love HTML and JavaScript
+
+// find all-caps words and then use replace() with a callback that loawercases match. 
+
+console.log("I Love HTML".replace(/[A-Z]/g, (match) => match.toLowerCase())) // i love html

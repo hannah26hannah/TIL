@@ -10,7 +10,7 @@ Today I Learnt : Keeping records of daily study log.
 
 ### python-17techs
 
-- [17 techs](python-17techs/17techs.md) (updated 2021-01-17)
+- [17 techs](python-17techs/17techs.md) (updated 2021-01-29)
 
 ### ts-first-project
 
