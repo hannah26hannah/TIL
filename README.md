@@ -4,6 +4,12 @@ Today I Learnt : Keeping records of daily study log.
 
 ## 📖 Self-study Chapters
 
+### Front-end Interview
+- HTML5
+- CSS
+- A11y
+- JavaScript
+
 ### db-modeling
 
 ### 🚧 python-weeks
