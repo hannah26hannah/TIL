@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Example 1 : Accordian</title>
+</head>
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: aquamarine;
+        padding: 0 2rem 0 2rem;
+        font-weight: 800;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+    }
+    ul {
+        list-style: none;
+    }
+    ul.menu {
+        display: flex;
+        flex-direction: row;
+    }
+    ul.menu li {
+        margin-left: 1rem;
+    }
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        background-color: antiquewhite;
+    }
+    a:visited {
+        color: black;
+    }
+    a:link {
+        color: black;
+    }
+
+    span.down:after {
+        content: '▼';
+    }
+    span.up:after {
+        content: '▲';
+    }
+
+    .menuBtn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: antiquewhite;
+        border: 0;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-decoration: none;
+        padding: 1rem;
+        cursor: pointer;
+    }
+    .menuBtn:hover {
+        background-color: beige;
+    }
+    .hide {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    ul.articleMenu > li {
+        margin-bottom: 1rem;
+    }
+
+    
+</style>
+<body>
+    <div class='container'>
+        <header>
+            <a href="/" class='logo'>Hannah</a>
+            <nav>
+                <ul class='menu'>
+                    <li><a href="/who">Who Am I</a></li>
+                    <li><a href="/service">Services</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <div class='container'>
+            <h1>Learn about accessibility</h1>
+            <p class='subtext'>This is subtext</p>
+            <h2>Read more about my services</h2>
+
+            <ul class='articleMenu'>
+                <li>
+                    <button 
+                        aria-expanded="false"
+                        aria-controls='sect1'
+                        id='btn1'
+                        class='menuBtn'>UI Design <span class='expander down'></span></button>
+                    <p
+                        id='sect1' 
+                        role='region' 
+                        aria-labelledby="btn1" 
+                        class='hide'>Lorem Ipsum..</p>
+                </li>
+                <li>
+                    <button 
+                        aria-expanded="false"
+                        aria-controls='sect2'
+                        id='btn2'
+                        class='menuBtn'>UI/UX Design <span class='expander down'></span></button>
+                    <p 
+                        id='sect2' 
+                        role='region' 
+                        aria-labelledby="btn2" 
+                        class='hide'>Lorem Ipsum..</p>
+                </li>
+                <li>
+                    <button 
+                        aria-expanded="false"
+                        aria-controls='sect3'
+                        id='btn3'
+                        class='menuBtn'>Another Design <span class='expander down'></span></button>
+                    <p 
+                        id='sect3'
+                        role='region'
+                        aria-labelledby="btn3"
+                        class='hide'>Lorem Ipsum..</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        
+        const menuBtn = document.querySelectorAll('.menuBtn');
+        const expanders = document.getElementsByClassName('expander');
+
+        menuBtn.forEach((button, i) => {
+            button.addEventListener('click', function() {
+                const panel = this.nextElementSibling;
+                const expander = expanders[i];
+                panel.classList.toggle('hide')
+                expander.classList.toggle('down')
+                expander.classList.toggle('up') 
+                toggleAttribute(button, 'aria-expanded');
+                
+            })
+        })
+
+        function toggleAttribute(el, attr) {
+            let value = el.getAttribute(attr);
+            if (value === 'false') x = true
+            else x = false
+            el.setAttribute(attr, x);
+        }
+
+    </script>
+</body>
+</html>
