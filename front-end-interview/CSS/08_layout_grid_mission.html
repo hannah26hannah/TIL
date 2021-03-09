@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Mission 1</title>
+</head>
+<style>
+.grid_1 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 40px);
+    gap: 5px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+section ul {
+    list-style: none;
+    display: flex;
+
+}
+.grid_item {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.grid_2 {
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: repeat(5, 40px);
+    gap: 10px;
+
+}
+.grid_3 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: auto 50px 10% 1fr 2fr;
+    gap: 10px;
+    
+}
+.grid_4 {
+    display: grid;
+    grid-template-columns: 10% 50px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+.grid_5 {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: 3fr 2fr 1fr;
+    gap: 10px;
+}
+.grid_6 {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer"
+    ;
+    grid-template-rows: 1fr 3fr 1fr;
+    padding: 1rem;
+}
+
+.grid_6 header { grid-area: header; background-color: azure  }
+.grid_6 aside { grid-area: sidebar; background-color: aquamarine; }
+.grid_6 main { grid-area: content; background-color: bisque; }
+.grid_6 footer { grid-area: footer; background-color: blanchedalmond; }
+.grid_6 > *,
+.grid_7 > *,
+.grid_8 > * {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.grid_7 {
+    display: grid;   
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid_7 header { grid-area: 1/1/2/4 ; background-color: azure  }
+.grid_7 aside { grid-area: 2/1/3/2; background-color: aquamarine; }
+.grid_7 main { grid-area: 2/2/2/4; background-color: bisque; }
+.grid_7 footer { grid-area: 3/1/4/4; background-color: blanchedalmond; }
+
+.grid_8 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.grid_8 header { grid-area: 1/1/2/6 ; background-color: azure  }
+.grid_8 nav { grid-area: 2/1/7/1; background-color: brown;}
+.grid_8 aside { grid-area: 1/6/6/7; background-color: aquamarine; }
+.grid_8 main { grid-area: 2/2/6/6; background-color: bisque; }
+.grid_8 footer { grid-area: 6/2/7/7; background-color: blanchedalmond; }
+</style>
+<body>
+    <nav class='index'>
+        <h1>Grid Layout Mission</h1>
+        <ul>
+            <li><a href='#problem1'>Problem 1: Create a grid container of 2 rows x 3 columns, and make each item size 100px x 40px with a 5px gap in between them.</li></a>
+            <li><a href="#quick1">Quick try 1: Create a grid container of 2 rows x 5 columns, and make each item size 50px x 40px.
+            </a></li>
+            <li><a href="#problem2">Problem 2 : Create a grid container of 2 rows x 5 columns, and make the columns different widths.
+            </a></li>
+            <li><a href="#quick2">Quick try 2: Create a grid container of 2 rows x 3 columns, and make each column’s width 10%, 50px and 1fr, respectively.
+            </a></li>
+            <li><a href="#quick3">Quick try 3: Create a grid container of 3 rows x 3 columns, and make each column width and row height 3fr, 2fr and 1fr, respectively.
+            </a></li>
+            <li><a href="#problem3">Problem 3 : Create a standard web page layout on a 3x3 grid template.
+            </a></li>
+            <li><a href="#problem4">Problem 4 : Let’s try the Problem 4 layout again, but this time using grid lines instead of naming the areas.
+            </a></li>
+            <li><a href="#quick4">Quick try 4 : Let’s try a layout on 6x6 grids.
+            </a></li>
+        </ul>
+    </nav>
+    <main class='container'>
+        <section id='problem1'>
+            <h2>Solution 1 : </h2>
+            <ul class='grid_1'>
+                <li class='grid_item'>Item 1</li>
+                <li class='grid_item'>Item 2</li>
+                <li class='grid_item'>Item 3</li>
+                <li class='grid_item'>Item 4</li>
+                <li class='grid_item'>Item 5</li>
+                <li class='grid_item'>Item 6</li>
+            </ul>
+        </section>
+        <section id='quick1'>
+            <h2>Answer 1 : </h2>
+            <ul class='grid_2'>
+                <li class='grid_item'>Item 1</li>
+                <li class='grid_item'>Item 2</li>
+                <li class='grid_item'>Item 3</li>
+                <li class='grid_item'>Item 4</li>
+                <li class='grid_item'>Item 5</li>
+                <li class='grid_item'>Item 6</li>
+                <li class='grid_item'>Item 7</li>
+                <li class='grid_item'>Item 8</li>
+                <li class='grid_item'>Item 9</li>
+                <li class='grid_item'>Item 10</li>
+            </ul>
+        </section>
+        <section id='problem2'>
+            <h2>Solution 2 : </h2>
+            <ul class='grid_3'>
+                <li class='grid_item'>Item 1</li>
+                <li class='grid_item'>Item 2</li>
+                <li class='grid_item'>Item 3</li>
+                <li class='grid_item'>Item 4</li>
+                <li class='grid_item'>Item 5</li>
+                <li class='grid_item'>Item 6</li>
+                <li class='grid_item'>Item 7</li>
+                <li class='grid_item'>Item 8</li>
+                <li class='grid_item'>Item 9</li>
+                <li class='grid_item'>Item 10</li>
+            </ul>
+        </section>
+        <section id='quick2'>
+            <h2>Answer 2 : </h2>
+            <ul class='grid_4'>
+                <li class='grid_item'>Item 1</li>
+                <li class='grid_item'>Item 2</li>
+                <li class='grid_item'>Item 3</li>
+                <li class='grid_item'>Item 4</li>
+                <li class='grid_item'>Item 5</li>
+                <li class='grid_item'>Item 6</li>
+            </ul>
+        </section>
+        <section id='quick3'>
+            <h2>Answer 3 : </h2>
+            <ul class='grid_5'>
+                <li class='grid_item'>Item 1</li>
+                <li class='grid_item'>Item 2</li>
+                <li class='grid_item'>Item 3</li>
+                <li class='grid_item'>Item 4</li>
+                <li class='grid_item'>Item 5</li>
+                <li class='grid_item'>Item 6</li>
+                <li class='grid_item'>Item 7</li>
+                <li class='grid_item'>Item 8</li>
+                <li class='grid_item'>Item 9</li>
+            </ul>
+        </section>
+        <section id='problem3'>
+            <h2>Solution 2 : </h2>
+            <article class='grid_6'>
+                <header>Header</header>
+                <aside>Sidebar</aside>
+                <main>Content</main>
+                <footer>Footer</footer>
+            </article>
+        </section>
+        <section id='problem4'>
+            <h2>Solution 2 : </h2>
+            <article class='grid_7'>
+                <header>Header</header>
+                <aside>Sidebar</aside>
+                <main>Content</main>
+                <footer>Footer</footer>
+            </article>
+        </section>
+        <section id='quick4'>
+            <h2>Answer 4 : </h2>
+            <article class='grid_8'>
+                <header>Header</header>
+                <aside>Advertise</aside>
+                <nav>Navigation</nav>
+                <main>Content</main>
+                <footer>Footer</footer>
+            </article>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -171,4 +171,5 @@ Gutter라고 하는 트랙과 트랙 사이의 간격
 아이템이 배치되는 하나 이상의 셀로 이루어진 영역
 
 # Reference
-[Grid](https://heropy.blog/2019/08/17/css-grid/)
+- [Grid 101](https://heropy.blog/2019/08/17/css-grid/)
+- [Grid Task](https://medium.com/chegg/css-grid-layout-in-examples-f85fd5428ba5) / `08_layout_grid_mission.html`
