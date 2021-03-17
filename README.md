@@ -4,7 +4,21 @@ Today I Learnt : Keeping records of daily study log.
 
 ## 📖 Self-study Chapters
 
+### React
+
+- React Concept
+- JSX
+- Component
+- Event Handling
+- DOM w/Ref
+- Iteration of Component
+- LifeCycle Method
+- Hooks
+
+w/리액트를 다루는 기술
+
 ### Front-end Interview
+
 - HTML5
 - CSS
 - A11y
