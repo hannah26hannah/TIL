@@ -1,0 +1,14 @@
+/* 자동으로 고유해지므로 흔히 사용되는 단어를 써도 된다 */
+
+.wrapper {
+  background: black;
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
+}
+
+/* Global CSS */
+:global .something {
+  font-weight: 800;
+  color: aqua;
+}
