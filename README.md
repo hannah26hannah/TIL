@@ -39,8 +39,9 @@ w/[testdome](https://www.testdome.com/tests)
 - [TypeScript 101](ts-first-project/doc/TypeScript_101.md) (updated 2021-01-29)
 
 ## Group Study
+- [Front-End Job Interview Study Repository](https://github.com/cottonpup/frontend-dev-interview-study)
 
 ### Network Study
 
-[Guide On Notion](https://www.notion.so/ef51928e72e84ec1bc94cf2dbc5c5c7e)
-[Summary On Tistory Blog](https://uiyoji-journal.tistory.com/search/네트워크-스터디)
+- [Guide On Notion](https://www.notion.so/ef51928e72e84ec1bc94cf2dbc5c5c7e)
+- [Summary On Tistory Blog](https://uiyoji-journal.tistory.com/search/네트워크-스터디)
